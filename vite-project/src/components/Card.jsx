@@ -1,16 +1,19 @@
+import png1280xd960 from "../assets/png1280xd960.png";
+import png96x96 from "../assets/png96x96";
+
 function Card(){
     return (
         <div className="card">
             <div className="card-image">
                 <figure className="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                    <img src={png1280xd960} alt="Placeholder image" />
                 </figure>
             </div>
             <div className="card-content">
                 <div className="media">
                     <div className="media-left">
                         <figure className="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                            <img src={png96x96} alt="Placeholder image" />
                         </figure>
                     </div>
                     <div className="media-content">
@@ -24,7 +27,7 @@ function Card(){
                     Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                     <a href="#">#css</a> <a href="#">#responsive</a>
                     <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                 </div>
             </div>
         </div>

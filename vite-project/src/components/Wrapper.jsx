@@ -1,13 +1,24 @@
+import {useEffect} from 'react';
+import bulmaUI from '../utils/bulma-ui.js';
 import Card from './Card';
 import BulmaLogo from '../assets/bulma-logo.png';
 
 function Wrapper(){
+
+    useEffect(
+        () => {
+            // This code will be executed when the DOM content has loaded
+            bulmaUI();
+        }, 
+        []
+    );
+
     return (
         <>
             <nav className="navbar is-transparent">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
-                        <img src={BulmaLogo} alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
+                        <img src={BulmaLogo} alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
                     </a>
                     <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
                         <span></span>
