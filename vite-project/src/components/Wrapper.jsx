@@ -16,7 +16,7 @@ function Wrapper(){
     );
 
     return (
-        <>
+        <div className="container">
             <nav className="navbar is-transparent">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
@@ -80,21 +80,76 @@ function Wrapper(){
                 <div className="container">
                     <h1 className="title">Card Section</h1>
                     <h2 className="subtitle">A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading</h2>
-                    <Card 
-                        imgRatio="is-4by3"
-                        imgSrc={png1280x960}
-                        imgAlt="An image"
-                        mediaAlign="media-left"
-                        mediaSize="is-48x48"
-                        mediaSrc={png96x96}
-                        mediaAlt="An image"
-                        title="John Smith"
-                        subtitle="@johnsmith"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
-                        atLinks={[{"title": "@bulmaio", "href":"#"},{"title":"@bulmacss", "href":"#"}]}
-                        tags={[{"title": "#css", "href":"#"},{"title":"#html", "href":"#"}]}
-                        postDate={""}
-                    />
+                    
+                        <div className="" style={{
+                            display: "grid",
+                            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr)",
+                            gridGap: "15px"
+                        }}>
+                            <Card 
+                                imgRatio="is-4by3"
+                                imgSrc={png1280x960}
+                                imgAlt="An image"
+                                mediaAlign="media-left"
+                                mediaSize="is-48x48"
+                                mediaSrc={png96x96}
+                                mediaAlt="An image"
+                                title="John Smith"
+                                subtitle="@johnsmith"
+                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                                atLinks={[{"title": "@bulmaio", "href":"#"},{"title":"@bulmacss", "href":"#"}]}
+                                tags={[{"title": "#css", "href":"#"},{"title":"#html", "href":"#"}]}
+                                postDate={""}
+                                
+                            />
+                            <Card 
+                                imgRatio="is-4by3"
+                                imgSrc={png1280x960}
+                                imgAlt="An image"
+                                mediaAlign="media-left"
+                                mediaSize="is-48x48"
+                                mediaSrc={png96x96}
+                                mediaAlt="An image"
+                                title="John Smith"
+                                subtitle="@johnsmith"
+                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                                atLinks={[{"title": "@bulmaio", "href":"#"},{"title":"@bulmacss", "href":"#"}]}
+                                tags={[{"title": "#css", "href":"#"},{"title":"#html", "href":"#"}]}
+                                postDate={""}
+                                />
+                        
+                            <Card 
+                                imgRatio="is-4by3"
+                                imgSrc={png1280x960}
+                                imgAlt="An image"
+                                mediaAlign="media-left"
+                                mediaSize="is-48x48"
+                                mediaSrc={png96x96}
+                                mediaAlt="An image"
+                                title="John Smith"
+                                subtitle="@johnsmith"
+                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                                atLinks={[{"title": "@bulmaio", "href":"#"},{"title":"@bulmacss", "href":"#"}]}
+                                tags={[{"title": "#css", "href":"#"},{"title":"#html", "href":"#"}]}
+                                postDate={""}
+                            />
+                            <Card 
+                                imgRatio="is-4by3"
+                                imgSrc={png1280x960}
+                                imgAlt="An image"
+                                mediaAlign="media-left"
+                                mediaSize="is-48x48"
+                                mediaSrc={png96x96}
+                                mediaAlt="An image"
+                                title="John Smith"
+                                subtitle="@johnsmith"
+                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                                atLinks={[{"title": "@bulmaio", "href":"#"},{"title":"@bulmacss", "href":"#"}]}
+                                tags={[{"title": "#css", "href":"#"},{"title":"#html", "href":"#"}]}
+                                postDate={""}
+                            />
+                        </div>
+                    
                 </div>
             </section>
 
@@ -132,7 +187,7 @@ function Wrapper(){
                     </p>
                 </div>
             </footer>
-        </>
+        </div>
     );
 }
 

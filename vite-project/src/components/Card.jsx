@@ -1,5 +1,10 @@
 function Card({imgRatio, imgSrc, imgAlt, mediaAlign, mediaSize, mediaSrc, mediaAlt, title, subtitle, content, atLinks, tags, postDate}){
     return (
+        <div className="margin-4" style={{
+            // atLinks and tags break the card by overflowing
+            wordBreak: "break-all",
+            whiteSpace: "pre-wrap"
+        }}>
         <div className="card">
             <div className="card-image">
                 <figure className={"image " + imgRatio}>
@@ -31,6 +36,7 @@ function Card({imgRatio, imgSrc, imgAlt, mediaAlign, mediaSize, mediaSrc, mediaA
                     <time dateTime={postDate}>{postDate}</time>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
