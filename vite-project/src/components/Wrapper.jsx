@@ -2,6 +2,8 @@ import {useEffect} from 'react';
 import bulmaUI from '../utils/bulma-ui.js';
 import Card from './Card';
 import BulmaLogo from '../assets/bulma-logo.png';
+import png1280x960 from "../assets/png1280x960.png";
+import png96x96 from "../assets/png96x96.png";
 
 function Wrapper(){
 
@@ -78,7 +80,17 @@ function Wrapper(){
                 <div className="container">
                     <h1 className="title">Card Section</h1>
                     <h2 className="subtitle">A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading</h2>
-                    <Card />
+                    <Card 
+                        imgRatio="is-4by3"
+                        imgSrc={png1280x960}
+                        imgAlt="An image"
+                        mediaAlign="media-left"
+                        mediaSize="is-48x48"
+                        mediaSrc={png96x96}
+                        mediaAlt="An image"
+                        title="John Smith"
+                        subtitle="@johnsmith"
+                    />
                 </div>
             </section>
 

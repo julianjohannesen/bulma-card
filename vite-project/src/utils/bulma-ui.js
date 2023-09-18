@@ -1,7 +1,7 @@
 function bulmaUI(){
-    document.addEventListener('DOMContentLoaded', () => {
+    //document.addEventListener('DOMContentLoaded', () => {
 
-        // Get all "navbar-burger" elements
+        // Get all "navbar-burger" elements (and turn the NodeList into an Array via slice)
         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
         // Check if there are any navbar burgers
@@ -23,7 +23,7 @@ function bulmaUI(){
             });
         }
 
-    });
+    //});
 };
 
 export default bulmaUI;

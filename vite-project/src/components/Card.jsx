@@ -1,24 +1,21 @@
-import png1280xd960 from "../assets/png1280xd960.png";
-import png96x96 from "../assets/png96x96";
-
-function Card(){
+function Card({imgRatio, imgSrc, imgAlt, mediaAlign, mediaSize, mediaSrc, mediaAlt, title, subtitle}){
     return (
         <div className="card">
             <div className="card-image">
-                <figure className="image is-4by3">
-                    <img src={png1280xd960} alt="Placeholder image" />
+                <figure className={"image " + imgRatio}>
+                    <img src={imgSrc} alt={imgAlt} />
                 </figure>
             </div>
             <div className="card-content">
                 <div className="media">
-                    <div className="media-left">
-                        <figure className="image is-48x48">
-                            <img src={png96x96} alt="Placeholder image" />
+                    <div className={mediaAlign}>
+                        <figure className={"image " + mediaSize}>
+                            <img src={mediaSrc} alt={mediaAlt} />
                         </figure>
                     </div>
                     <div className="media-content">
-                        <p className="title is-4">John Smith</p>
-                        <p className="subtitle is-6">@johnsmith</p>
+                        <p className="title is-4">{title}</p>
+                        <p className="subtitle is-6">{subtitle}</p>
                     </div>
                 </div>
 
