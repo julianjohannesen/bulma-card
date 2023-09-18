@@ -90,6 +90,10 @@ function Wrapper(){
                         mediaAlt="An image"
                         title="John Smith"
                         subtitle="@johnsmith"
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                        atLinks={[{"title": "@bulmaio", "href":"#"},{"title":"@bulmacss", "href":"#"}]}
+                        tags={[{"title": "#css", "href":"#"},{"title":"#html", "href":"#"}]}
+                        postDate={""}
                     />
                 </div>
             </section>

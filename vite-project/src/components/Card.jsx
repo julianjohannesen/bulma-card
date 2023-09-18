@@ -1,4 +1,4 @@
-function Card({imgRatio, imgSrc, imgAlt, mediaAlign, mediaSize, mediaSrc, mediaAlt, title, subtitle}){
+function Card({imgRatio, imgSrc, imgAlt, mediaAlign, mediaSize, mediaSrc, mediaAlt, title, subtitle, content, atLinks, tags, postDate}){
     return (
         <div className="card">
             <div className="card-image">
@@ -20,11 +20,15 @@ function Card({imgRatio, imgSrc, imgAlt, mediaAlign, mediaSize, mediaSrc, mediaA
                 </div>
 
                 <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
+                    {content} 
+                    {atLinks.map(({title,href,i})=>(
+                        <a key={title + i} href={href} title={title}>{title}&nbsp;</a>
+                    ))}
+                    {tags.map(({title,href,i})=>(
+                        <a key={title + i} href={href} title={title}>{title}&nbsp;</a>
+                    ))}
                     <br />
-                    <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <time dateTime={postDate}>{postDate}</time>
                 </div>
             </div>
         </div>
