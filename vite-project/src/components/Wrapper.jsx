@@ -83,7 +83,7 @@ function Wrapper(){
                     
                         <div className="" style={{
                             display: "grid",
-                            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr)",
+                            gridTemplateColumns: "repeat(auto-fill, minmax(275px, 1fr)",
                             gridGap: "15px"
                         }}>
                             <Card 
